@@ -3,7 +3,7 @@
 <img src="./assets/images/{{(listing | async)?.image}}" alt="{{(listing | async)?.title}}">
 <p>{{(listing | async)?.description}}</p>
 <p>{{(listing | async)?.postDate}}</p>
-<p>{{(listing | async)?.postId}}</p>
+<p>{{(listing | async)?.$key}}</p>
 <p>{{(listing | async)?.contactInfo}}</p>
 <p>{{(listing | async)?.location}}</p>
 

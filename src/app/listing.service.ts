@@ -17,7 +17,10 @@ export class ListingService {
 
   getListingById(listingId: string) {
     return this.database.object('listing/' + listingId);
+  }
 
+  updateDatabase(listing: Listing){
+    this.listings.push(listing);
   }
 
 }

@@ -1,11 +1,11 @@
 {"listing": [
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":1, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":2, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":3, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":4, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":5, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":6, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":7, "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
-  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "postId":8, "contactInfo": "thisemail@email.com", "location": "Right Behind You"}
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff",  "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"},
+  { "title": "Buy My Stuff", "price": 400, "image": "puppy.jpg", "description": "All of my great stuff", "postDate": "Date.now()", "category": "Great Stuff", "contactInfo": "thisemail@email.com", "location": "Right Behind You"}
   ]
 }

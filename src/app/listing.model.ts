@@ -6,7 +6,6 @@ export class Listing {
     public description: string,
     public postDate: number,
     public category: string,
-    public postId: number,
     public contactInfo: string,
     public location: string ){}
 }
