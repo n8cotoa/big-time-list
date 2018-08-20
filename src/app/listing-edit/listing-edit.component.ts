@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Listing } from '../listing.model';
 import { ListingService } from '../listing.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-listing-edit',
@@ -12,14 +13,14 @@ import { ListingService } from '../listing.service';
   providers: [ListingService]
 })
 export class ListingEditComponent implements OnInit {
-  postId: number = null;
-  listing: Listing = null;
+  postId: string = null;
+  listing;
 
   constructor(private router: Router, private route: ActivatedRoute, private location: Location, private listingService: ListingService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.postId = parseInt(urlParameters['id']);
+      this.postId = urlParameters['id'];
     });
     this.listing = this.listingService.getListingById(this.postId);
   }

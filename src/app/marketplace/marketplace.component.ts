@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
 import { Router } from '@angular/router';
 import { ListingService } from '../listing.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-marketplace',
@@ -11,15 +12,16 @@ import { ListingService } from '../listing.service';
 })
 export class MarketplaceComponent implements OnInit {
 
+   listings: any[];
+
   constructor(private router: Router, private listingService: ListingService) { }
 
   ngOnInit() {
-    this.listings = this.listingService.getListings();
+    this.listingService.getListings().subscribe(listings => this.listings = listings);
   }
-  listings: Listing[];
 
-  goToListing(clickedListing: Listing) {
-    this.router.navigate(['listing-detail', clickedListing.postId])
+  goToListing(clickedListing) {
+    this.router.navigate(['listing-detail', clickedListing.$key])
   }
 
 }
