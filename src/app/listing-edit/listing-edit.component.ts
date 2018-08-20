@@ -25,7 +25,23 @@ export class ListingEditComponent implements OnInit {
     this.listing = this.listingService.getListingById(this.postId);
   }
 
-  doneEditing() {
-    this.router.navigate(['listing-detail', this.listing.postId])
+  doneEditing(title: string, price: string, image: string, description: string, category: string, contactInfo: string, location: string) {
+    let listingInFirebase = this.listingService.getListingById(this.postId);
+    listingInFirebase.update({
+      title: title,
+      price: price,
+      image: image,
+      description: description,
+      category: category,
+      contactInfo: contactInfo,
+      location: location
+    });
+    this.router.navigate(['listing-detail', this.postId]);
+  }
+
+  deleteListing(){
+    let listingInFirebase = this.listingService.getListingById(this.postId);
+    listingInFirebase.remove();
+    this.router.navigate(['marketplace'])
   }
 }

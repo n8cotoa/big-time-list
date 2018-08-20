@@ -1,31 +1,32 @@
 <form>
   <div class="form-group">
     <label for="title">Edit Title:</label>
-    <input class="form-control" type="text" name="title" [(ngModel)]=listing.title>
+    <input class="form-control" type="text" name="title" value="{{(listing | async)?.title}}" #title>
   </div>
   <div class="form-group">
     <label for="price">Edit Price:</label>
-    <input class="form-control" type="text" name="price" [(ngModel)]=listing.price>
+    <input class="form-control" type="text" name="price" value="{{(listing | async)?.price}}" #price>
   </div>
   <div class="form-group">
     <label for="image">Edit Image:</label>
-    <input class="form-control" type="text" name="image" [(ngModel)]=listing.image>
+    <input class="form-control" type="text" name="image" value="{{(listing | async)?.image}}" #image>
   </div>
   <div class="form-group">
     <label for="description">Edit Description:</label>
-    <input class="form-control" type="text" name="description" [(ngModel)]=listing.description>
+    <input class="form-control" type="text" name="description" value="{{(listing | async)?.description}}" #description>
   </div>
   <div class="form-group">
     <label for="category">Edit Category:</label>
-    <input class="form-control" type="text" name="category" [(ngModel)]=listing.category>
+    <input class="form-control" type="text" name="category" value="{{(listing | async)?.category}}" #category>
   </div>
   <div class="form-group">
     <label for="contactInfo">Edit Contact Info:</label>
-    <input class="form-control" type="text" name="contactInfo" [(ngModel)]=listing.contactInfo>
+    <input class="form-control" type="text" name="contactInfo" value="{{(listing | async)?.contactInfo}}" #contactInfo>
   </div>
   <div class="form-group">
     <label for="location">Edit Location:</label>
-    <input class="form-control" type="text" name="location" [(ngModel)]=listing.location>
+    <input class="form-control" type="text" name="location" value="{{(listing | async)?.location}}" #location>
   </div>
-  <button type="button" name="button" class="btn btn-danger" (click)="doneEditing()">Done Editing</button>
+  <button type="button" name="button" class="btn btn-danger" (click)="doneEditing(title.value, price.value, image.value, description.value, category.value, contactInfo.value, location.value)">Done Editing</button>
 </form>
+<button type="button" name="button" class="btn btn-danger" (click)="deleteListing()">Delete</button>

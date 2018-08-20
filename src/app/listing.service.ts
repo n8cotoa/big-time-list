@@ -16,7 +16,6 @@ export class ListingService {
   }
 
   getListingById(listingId: string) {
-    console.log(this.database.object('listing/' + listingId))
     return this.database.object('listing/' + listingId);
 
   }
