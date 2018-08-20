@@ -1,4 +1,4 @@
 <div *ngFor='let listing of listings' (click)="goToListing(listing)">
   <h2>{{listing.title}}, ${{listing.price}}</h2>
-  <img src="{{listing.img}}" alt="Img">
+  <img src="./assets/images/{{listing.image}}" alt="Img">
 </div>
