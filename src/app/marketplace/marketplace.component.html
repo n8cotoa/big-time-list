@@ -1,3 +1,4 @@
-<p>
-  marketplace works!
-</p>
+<div *ngFor='let list of listings'>
+  <h2>{{list.title}}, ${{list.price}}</h2>
+  <img src="{{list.img}}" alt="Img">
+</div>
