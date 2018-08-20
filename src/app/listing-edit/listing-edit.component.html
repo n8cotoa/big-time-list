@@ -1,3 +1,31 @@
-<p>
-  listing-edit works!
-</p>
+<form class="">
+  <div class="form-group">
+    <label for="title">Edit Title:</label>
+    <input class="form-control" type="text" name="title" [(ngModel)]="listing.title">
+  </div>
+  <div class="form-group">
+    <label for="price">Edit Price:</label>
+    <input class="form-control" type="text" name="price" [(ngModel)]="listing.price">
+  </div>
+  <div class="form-group">
+    <label for="image">Edit Image:</label>
+    <input class="form-control" type="text" name="image" [(ngModel)]="listing.image">
+  </div>
+  <div class="form-group">
+    <label for="description">Edit Description:</label>
+    <input class="form-control" type="text" name="description" [(ngModel)]="listing.description">
+  </div>
+  <div class="form-group">
+    <label for="category">Edit Category:</label>
+    <input class="form-control" type="text" name="category" [(ngModel)]="listing.category">
+  </div>
+  <div class="form-group">
+    <label for="contactInfo">Edit Contact Info:</label>
+    <input class="form-control" type="text" name="contactInfo" [(ngModel)]="listing.contactInfo">
+  </div>
+  <div class="form-group">
+    <label for="location">Edit Location:</label>
+    <input class="form-control" type="text" name="location" [(ngModel)]="listing.location">
+  </div>
+  <button type="button" name="button" class="btn btn-danger" (click)="doneEditing()">Done Editing</button>
+</form>
