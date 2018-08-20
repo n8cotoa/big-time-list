@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { UniquePipe } from './unique.pipe';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     ListingDetailComponent,
     ListingEditComponent,
-    NewListingComponent
+    NewListingComponent,
+    UniquePipe
   ],
   imports: [
     BrowserModule,

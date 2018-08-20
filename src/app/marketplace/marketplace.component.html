@@ -1,4 +1,13 @@
 <div *ngFor='let listing of listings' (click)="goToListing(listing)">
-  <h2>{{listing.title}}, ${{listing.price}}</h2>
-  <img src="./assets/images/{{listing.image}}" alt="Img">
+  <div *ngIf="listing.category == 'Amphibian'">
+    <h2>{{listing.title}}, ${{listing.price}}</h2>
+    <img src="./assets/images/{{listing.image}}" alt="Img">
+  </div>
+  <div *ngIf="listing.category">
+
+  </div>
+</div>
+
+<div *ngFor='let listing of listings | unique'>
+  <p>{{listing.category}}</p>
 </div>

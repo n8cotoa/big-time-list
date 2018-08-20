@@ -3,6 +3,7 @@ import { Listing } from '../listing.model';
 import { Router } from '@angular/router';
 import { ListingService } from '../listing.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { UniquePipe } from '../unique.pipe';
 
 @Component({
   selector: 'app-marketplace',
