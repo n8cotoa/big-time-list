@@ -1,9 +1,14 @@
-<div class="container">
+<div id="header">
+  <div class="container" >
   <h1>{{title}}</h1>
   <div class="navbar">
-    <a routerLink="marketplace"><li>Marketplace</li></a>
-    <a routerLink="new-listing"><li>New Listing</li></a>
-
+    <ul>
+      <li><a routerLink="marketplace">Marketplace</a></li>
+      <li><a routerLink="new-listing">New Listing</a></li>
+    </ul>
   </div>
+  </div>
+</div>
+<div class="container">
   <router-outlet></router-outlet>
 </div>

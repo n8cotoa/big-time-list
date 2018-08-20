@@ -1,0 +1,10 @@
+.card {
+    margin-bottom: 30px;
+    background: #2d3035;
+    color: white;
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: white;
+}

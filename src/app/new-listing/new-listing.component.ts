@@ -17,8 +17,11 @@ export class NewListingComponent implements OnInit {
   }
 
   addNewListing(title: string, price: string, image: string, description: string, category: string, contactInfo: string, location: string) {
-  let newListing = new Listing(title, parseInt(price), image, description, Date.now(), category, contactInfo, location);
+  let date = Date().toString();
+  let newListing = new Listing(title, parseInt(price), image, description, date, category, contactInfo, location);
   this.listingService.updateDatabase(newListing);
   this.router.navigate(['marketplace'])
   }
+
+
 }
